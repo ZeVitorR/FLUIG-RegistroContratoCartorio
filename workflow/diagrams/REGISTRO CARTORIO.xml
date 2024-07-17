@@ -1,0 +1,1365 @@
+<list>
+  <ProcessDefinition>
+    <processDefinitionPK>
+      <companyId>1</companyId>
+      <processId>REGISTRO CARTORIO</processId>
+    </processDefinitionPK>
+    <processDescription>Registro do Contrato no Cartório</processDescription>
+    <instruction>O registro em cartório é um procedimento que envolve a apresentação de um documento legalmente válido, o pagamento das taxas correspondentes e a análise e registro do documento pelo funcionário do cartório. Uma vez registrado, o documento recebe um número de identificação e é arquivado para referência futura.</instruction>
+    <active>true</active>
+    <publicProcess>true</publicProcess>
+    <volumeId>Default</volumeId>
+    <categoryId>Inadimplência</categoryId>
+    <managerEngineAllocationId>Papel</managerEngineAllocationId>
+    <managerEngineAllocationConfiguration>&lt;AssignmentController&gt;&lt;Role&gt;RC-Gestores&lt;/Role&gt;&lt;/AssignmentController&gt;</managerEngineAllocationConfiguration>
+    <snapshotFrequency>0</snapshotFrequency>
+    <baseDay>0</baseDay>
+    <baseMonth>0</baseMonth>
+    <periodId>Default</periodId>
+    <keyWord></keyWord>
+    <uniqueCardVersion>false</uniqueCardVersion>
+    <complementsLevel>1</complementsLevel>
+    <notifyRequisitionerComplements>true</notifyRequisitionerComplements>
+    <notifyManagerComplements>false</notifyManagerComplements>
+    <notifyAuthorityComplements>true</notifyAuthorityComplements>
+    <deadlineTime>0</deadlineTime>
+    <warningDeadlineTime>0</warningDeadlineTime>
+  </ProcessDefinition>
+  <ProcessDefinitionVersion>
+    <processDefinitionVersionPK>
+      <companyId>1</companyId>
+      <processId>REGISTRO CARTORIO</processId>
+      <version>4</version>
+    </processDefinitionVersionPK>
+    <versionDescription></versionDescription>
+    <formId>331895</formId>
+    <editionMode>false</editionMode>
+    <updateAttachmentsVersion>false</updateAttachmentsVersion>
+    <controlsAttachmentsSecurity>false</controlsAttachmentsSecurity>
+    <active>true</active>
+    <blockedVersion>false</blockedVersion>
+    <counterSign>false</counterSign>
+    <processDiagram>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; style=&quot;stroke-dasharray:none; shape-rendering:auto; font-family:&apos;Arial&apos;; text-rendering:auto; fill-opacity:1; color-interpolation:auto; color-rendering:auto; font-size:12; fill:black; stroke:black; image-rendering:auto; stroke-miterlimit:10; stroke-linecap:square; stroke-linejoin:miter; font-style:normal; stroke-width:1; stroke-dashoffset:0; font-weight:normal; stroke-opacity:1;&quot; contentScriptType=&quot;text/ecmascript&quot; preserveAspectRatio=&quot;xMidYMid meet&quot; zoomAndPan=&quot;magnify&quot; version=&quot;1.0&quot; contentStyleType=&quot;text/css&quot; xml:xlink=&quot;http://www.w3.org/1999/xlink&quot; width=&quot;1183&quot; height=&quot;445&quot;&gt;&lt;rect x=&quot;30&quot; y=&quot;30&quot; width=&quot;1153&quot; height=&quot;415&quot; ry=&quot;0&quot; rx=&quot;0&quot; style=&quot;stroke:#000000; fill:#9FC1C6&quot; /&gt;&lt;g componentSequence=&quot;15&quot;&gt;&lt;text x=&quot;-237&quot; y=&quot;37&quot; transform=&quot;rotate(270)&quot; text-anchor=&quot;middle&quot; style=&quot;font-weight:bold;font-size:10px;stroke:none; fill:#434343&quot;&gt;&lt;tspan dy=&quot;14&quot; x=&quot;-237&quot;&gt;Processo&lt;/tspan&gt;&lt;/text&gt;&lt;/g&gt;&lt;g sequence=&quot;2&quot;&gt;&lt;ellipse cx=&quot;1117&quot; cy=&quot;234&quot; rx=&quot;17&quot; ry=&quot;17&quot; stroke-width=&quot;3&quot; style=&quot;fill:url(#linearGradientFF6666FF9696FFB6B6_1288767051);&quot; stroke=&quot;993333&quot; /&gt;&lt;/g&gt;&lt;g sequence=&quot;3&quot;&gt;&lt;ellipse cx=&quot;107&quot; cy=&quot;234&quot; rx=&quot;17&quot; ry=&quot;17&quot; stroke-width=&quot;1&quot; style=&quot;fill:url(#linearGradient66FF6696FF96B6FFB6_1309939845);&quot; stroke=&quot;336633&quot; /&gt;&lt;/g&gt;&lt;g sequence=&quot;5&quot;&gt;&lt;rect x=&quot;860&quot; y=&quot;330&quot; width=&quot;105&quot; height=&quot;98&quot; ry=&quot;5&quot; rx=&quot;5&quot; style=&quot;fill:url(#linearGradientF8FBFEEDF5FCDEEDFAD4E7F8E2E5E9_1685806736);&quot; stroke=&quot;191970&quot; /&gt;&lt;/g&gt;&lt;g componentSequence=&quot;5&quot;&gt;&lt;text x=&quot;912&quot; y=&quot;345&quot; text-anchor=&quot;middle&quot; style=&quot;font-weight:bold;font-size:10px;stroke:none; fill:#333399&quot;&gt;&lt;tspan dy=&quot;14&quot; x=&quot;912&quot;&gt;Iniciar Tratativas&lt;/tspan&gt;&lt;tspan dy=&quot;14&quot; x=&quot;912&quot;&gt;Contratos&lt;/tspan&gt;&lt;tspan dy=&quot;14&quot; x=&quot;912&quot;&gt;Registrados&lt;/tspan&gt;&lt;/text&gt;&lt;/g&gt;&lt;g sequence=&quot;5&quot;&gt;&lt;image x=&quot;905&quot; y=&quot;411&quot; width=&quot;16&quot; height=&quot;16&quot; xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot; xlink:type=&quot;simple&quot; xlink:actuate=&quot;onLoad&quot; xlink:show=&quot;embed&quot; preserveAspectRatio=&quot;none&quot; xlink:href=&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABPklEQVR42qVT20rDQBDti803CG0MhiRvNvl/6Iui4KXQl4JaA6Vo0GJ6S23a2p2eySZqdLRgBk4y2Z05MztnUyOiWhXoB17/QYmA7Z322xsw1kllghmcCLuvKdF8AzJVTtziO0GF4ZLoViJg1qfFJwHbYcMk27Z1dyCYgWCAIj0lEEy+dcDWMC1yHCfz10iKsd5Hke5WIEjgxKiAfCq6b1rH5HnexzE45h4Bl2uBQOWJ+ybfQQcd9QeB7/sUBEGGg3qdDMPI/JYf0An2bjDt0400A/VTRpOP4LqZz2N5AbiDdioQRIiIkrJ8X4c4wf4AEnIHZ9IMYiSG0PIRAWmuQvPIIjcnGGMtBMHV9Jcj8IQ5eTjVeE60IitgibON4NxB5nPo3V6RfJUXuVQFCoI5MAIe0OU12r+QbmKln6kKdodw0E8MCNxNAAAAAElFTkSuQmCC&quot; /&gt;&lt;/g&gt;&lt;g sequence=&quot;6&quot;&gt;&lt;rect x=&quot;860&quot; y=&quot;200&quot; width=&quot;106&quot; height=&quot;70&quot; ry=&quot;5&quot; rx=&quot;5&quot; style=&quot;fill:url(#linearGradientF8FBFEEDF5FCDEEDFAD4E7F8E2E5E9_810677082);&quot; stroke=&quot;191970&quot; /&gt;&lt;/g&gt;&lt;g componentSequence=&quot;6&quot;&gt;&lt;text x=&quot;913&quot; y=&quot;215&quot; text-anchor=&quot;middle&quot; style=&quot;font-weight:bold;font-size:10px;stroke:none; fill:#333399&quot;&gt;&lt;tspan dy=&quot;14&quot; x=&quot;913&quot;&gt;Decisão&lt;/tspan&gt;&lt;tspan dy=&quot;14&quot; x=&quot;913&quot;&gt;Financeiro&lt;/tspan&gt;&lt;/text&gt;&lt;/g&gt;&lt;g sequence=&quot;7&quot;&gt;&lt;rect x=&quot;200&quot; y=&quot;199&quot; width=&quot;106&quot; height=&quot;70&quot; ry=&quot;5&quot; rx=&quot;5&quot; style=&quot;fill:url(#linearGradientF8FBFEEDF5FCDEEDFAD4E7F8E2E5E9_1644385272);&quot; stroke=&quot;191970&quot; /&gt;&lt;/g&gt;&lt;g componentSequence=&quot;7&quot;&gt;&lt;text x=&quot;253&quot; y=&quot;223&quot; text-anchor=&quot;middle&quot; style=&quot;font-weight:bold;font-size:10px;stroke:none; fill:#333399&quot;&gt;&lt;tspan dy=&quot;14&quot; x=&quot;253&quot;&gt;Registro Cartório&lt;/tspan&gt;&lt;/text&gt;&lt;/g&gt;&lt;g sequence=&quot;16&quot;&gt;&lt;rect x=&quot;200&quot; y=&quot;56&quot; width=&quot;106&quot; height=&quot;84&quot; ry=&quot;5&quot; rx=&quot;5&quot; style=&quot;fill:url(#linearGradientF8FBFEEDF5FCDEEDFAD4E7F8E2E5E9_16686001);&quot; stroke=&quot;191970&quot; /&gt;&lt;/g&gt;&lt;g componentSequence=&quot;16&quot;&gt;&lt;text x=&quot;253&quot; y=&quot;71&quot; text-anchor=&quot;middle&quot; style=&quot;font-weight:bold;font-size:10px;stroke:none; fill:#333399&quot;&gt;&lt;tspan dy=&quot;14&quot; x=&quot;253&quot;&gt;Email Status -&lt;/tspan&gt;&lt;tspan dy=&quot;14&quot; x=&quot;253&quot;&gt;lote registrando&lt;/tspan&gt;&lt;/text&gt;&lt;/g&gt;&lt;g sequence=&quot;18&quot;&gt;&lt;polygon points=&quot; 708 220 738 190 768 220 738 250 708 220&quot; style=&quot;fill:url(#linearGradientFAFBFCFFFFCC_631545312);&quot; stroke=&quot;000000&quot; /&gt;&lt;/g&gt;&lt;path style=&quot;fill:none; stroke-width:6; stroke:#000000;&quot; d=&quot;M728.0 220.0 L748.0 220.0&quot; /&gt;&lt;path style=&quot;fill:none; stroke-width:6; stroke:#000000;&quot; d=&quot;M738.0 210.0 L738.0 230.0&quot; /&gt;&lt;g componentSequence=&quot;18&quot;&gt;&lt;text x=&quot;738&quot; y=&quot;253&quot; text-anchor=&quot;middle&quot; style=&quot;font-weight:bold;font-size:10px;stroke:none; fill:#333399&quot;&gt;&lt;tspan dy=&quot;14&quot; x=&quot;738&quot;&gt;Join&lt;/tspan&gt;&lt;/text&gt;&lt;/g&gt;&lt;g sequence=&quot;19&quot;&gt;&lt;rect x=&quot;540&quot; y=&quot;56&quot; width=&quot;106&quot; height=&quot;84&quot; ry=&quot;5&quot; rx=&quot;5&quot; style=&quot;fill:url(#linearGradientF8FBFEEDF5FCDEEDFAD4E7F8E2E5E9_375607800);&quot; stroke=&quot;191970&quot; /&gt;&lt;/g&gt;&lt;g componentSequence=&quot;19&quot;&gt;&lt;text x=&quot;593&quot; y=&quot;71&quot; text-anchor=&quot;middle&quot; style=&quot;font-weight:bold;font-size:10px;stroke:none; fill:#333399&quot;&gt;&lt;tspan dy=&quot;14&quot; x=&quot;593&quot;&gt;Lacto despesas&lt;/tspan&gt;&lt;tspan dy=&quot;14&quot; x=&quot;593&quot;&gt;Cartorio (ZZZ)&lt;/tspan&gt;&lt;/text&gt;&lt;/g&gt;&lt;g sequence=&quot;20&quot;&gt;&lt;polygon points=&quot; 420 220 450 190 480 220 450 250 420 220&quot; style=&quot;fill:url(#linearGradientFAFBFCFFFFCC_396985673);&quot; stroke=&quot;000000&quot; /&gt;&lt;/g&gt;&lt;path style=&quot;fill:none; stroke-width:6; stroke:#000000;&quot; d=&quot;M440.0 220.0 L460.0 220.0&quot; /&gt;&lt;path style=&quot;fill:none; stroke-width:6; stroke:#000000;&quot; d=&quot;M450.0 210.0 L450.0 230.0&quot; /&gt;&lt;g componentSequence=&quot;20&quot;&gt;&lt;text x=&quot;450&quot; y=&quot;253&quot; text-anchor=&quot;middle&quot; style=&quot;font-weight:bold;font-size:10px;stroke:none; fill:#333399&quot;&gt;&lt;tspan dy=&quot;14&quot; x=&quot;450&quot;&gt;Paralelo&lt;/tspan&gt;&lt;/text&gt;&lt;/g&gt;&lt;g sequence=&quot;21&quot;&gt;&lt;rect x=&quot;540&quot; y=&quot;338&quot; width=&quot;106&quot; height=&quot;70&quot; ry=&quot;5&quot; rx=&quot;5&quot; style=&quot;fill:url(#linearGradientF8FBFEEDF5FCDEEDFAD4E7F8E2E5E9_250169240);&quot; stroke=&quot;191970&quot; /&gt;&lt;/g&gt;&lt;g componentSequence=&quot;21&quot;&gt;&lt;text x=&quot;593&quot; y=&quot;353&quot; text-anchor=&quot;middle&quot; style=&quot;font-weight:bold;font-size:10px;stroke:none; fill:#333399&quot;&gt;&lt;tspan dy=&quot;14&quot; x=&quot;593&quot;&gt;Email Status -&lt;/tspan&gt;&lt;tspan dy=&quot;14&quot; x=&quot;593&quot;&gt;lote registrado&lt;/tspan&gt;&lt;/text&gt;&lt;/g&gt;&lt;g componentSequence=&quot;8&quot;&gt;&lt;text x=&quot;172&quot; y=&quot;234&quot; style=&quot;font-size:10px;font-weight:none;stroke:none; fill:#333399&quot; text-anchor=&quot;left&quot; /&gt;&lt;/g&gt;&lt;g componentSequence=&quot;10&quot;&gt;&lt;text x=&quot;1042&quot; y=&quot;294&quot; style=&quot;font-size:10px;font-weight:none;stroke:none; fill:#333399&quot; text-anchor=&quot;left&quot; /&gt;&lt;/g&gt;&lt;g componentSequence=&quot;11&quot;&gt;&lt;text x=&quot;1043&quot; y=&quot;234&quot; style=&quot;font-size:10px;font-weight:none;stroke:none; fill:#333399&quot; text-anchor=&quot;left&quot; /&gt;&lt;/g&gt;&lt;g componentSequence=&quot;12&quot;&gt;&lt;text x=&quot;922&quot; y=&quot;300&quot; style=&quot;font-size:10px;font-weight:none;stroke:none; fill:#333399&quot; text-anchor=&quot;left&quot; /&gt;&lt;/g&gt;&lt;g componentSequence=&quot;17&quot;&gt;&lt;text x=&quot;263&quot; y=&quot;169&quot; style=&quot;font-size:10px;font-weight:none;stroke:none; fill:#333399&quot; text-anchor=&quot;left&quot; /&gt;&lt;/g&gt;&lt;g componentSequence=&quot;22&quot;&gt;&lt;text x=&quot;683&quot; y=&quot;173&quot; style=&quot;font-size:10px;font-weight:none;stroke:none; fill:#333399&quot; text-anchor=&quot;left&quot; /&gt;&lt;/g&gt;&lt;g componentSequence=&quot;23&quot;&gt;&lt;text x=&quot;524&quot; y=&quot;173&quot; style=&quot;font-size:10px;font-weight:none;stroke:none; fill:#333399&quot; text-anchor=&quot;left&quot; /&gt;&lt;/g&gt;&lt;g componentSequence=&quot;24&quot;&gt;&lt;text x=&quot;528&quot; y=&quot;300&quot; style=&quot;font-size:10px;font-weight:none;stroke:none; fill:#333399&quot; text-anchor=&quot;left&quot; /&gt;&lt;/g&gt;&lt;g componentSequence=&quot;25&quot;&gt;&lt;text x=&quot;679&quot; y=&quot;300&quot; style=&quot;font-size:10px;font-weight:none;stroke:none; fill:#333399&quot; text-anchor=&quot;left&quot; /&gt;&lt;/g&gt;&lt;g componentSequence=&quot;26&quot;&gt;&lt;text x=&quot;679&quot; y=&quot;300&quot; style=&quot;font-size:10px;font-weight:none;stroke:none; fill:#333399&quot; text-anchor=&quot;left&quot; /&gt;&lt;/g&gt;&lt;g componentSequence=&quot;27&quot;&gt;&lt;text x=&quot;373&quot; y=&quot;234&quot; style=&quot;font-size:10px;font-weight:none;stroke:none; fill:#333399&quot; text-anchor=&quot;left&quot; /&gt;&lt;/g&gt;&lt;g componentSequence=&quot;28&quot;&gt;&lt;text x=&quot;824&quot; y=&quot;234&quot; style=&quot;font-size:10px;font-weight:none;stroke:none; fill:#333399&quot; text-anchor=&quot;left&quot; /&gt;&lt;/g&gt;&lt;g componentSequence=&quot;29&quot;&gt;&lt;text x=&quot;172&quot; y=&quot;234&quot; style=&quot;font-size:10px;font-weight:none;stroke:none; fill:#333399&quot; text-anchor=&quot;left&quot; /&gt;&lt;/g&gt;&lt;g componentSequence=&quot;30&quot;&gt;&lt;text x=&quot;263&quot; y=&quot;169&quot; style=&quot;font-size:10px;font-weight:none;stroke:none; fill:#333399&quot; text-anchor=&quot;left&quot; /&gt;&lt;/g&gt;&lt;g componentSequence=&quot;31&quot;&gt;&lt;text x=&quot;263&quot; y=&quot;169&quot; style=&quot;font-size:10px;font-weight:none;stroke:none; fill:#333399&quot; text-anchor=&quot;left&quot; /&gt;&lt;/g&gt;&lt;g componentSequence=&quot;32&quot;&gt;&lt;text x=&quot;824&quot; y=&quot;234&quot; style=&quot;font-size:10px;font-weight:none;stroke:none; fill:#333399&quot; text-anchor=&quot;left&quot; /&gt;&lt;/g&gt;&lt;path style=&quot;fill:none; stroke:#000000;stroke-width:1&quot; d=&quot;M965.0 341.0 L1103.0 244.0&quot; /&gt;&lt;polygon style=&quot;fill:#000000; stroke:#000000;&quot; points=&quot; 1092 246 1103 244 1098 254 1096 249&quot; /&gt;&lt;path style=&quot;fill:none; stroke:#000000;stroke-width:1&quot; d=&quot;M966.0 234.0 L1100.0 234.0&quot; /&gt;&lt;polygon style=&quot;fill:#000000; stroke:#000000;&quot; points=&quot; 1090 229 1100 234 1090 239 1092 234&quot; /&gt;&lt;path style=&quot;fill:none; stroke:#000000;stroke-width:1&quot; d=&quot;M125.0 234.0 L199.0 234.0&quot; /&gt;&lt;polygon style=&quot;fill:#000000; stroke:#000000;&quot; points=&quot; 189 229 199 234 189 239 191 234&quot; /&gt;&lt;path style=&quot;fill:none; stroke:#000000;stroke-width:1&quot; d=&quot;M199.0 234.0 L125.0 234.0&quot; /&gt;&lt;polygon style=&quot;fill:#000000; stroke:#000000;&quot; points=&quot; 135 239 125 234 135 229 133 234&quot; /&gt;&lt;path style=&quot;fill:none; stroke:#000000;stroke-width:1&quot; d=&quot;M912.0 270.0 L912.0 329.0&quot; /&gt;&lt;polygon style=&quot;fill:#000000; stroke:#000000;&quot; points=&quot; 917 319 912 329 907 319 912 321&quot; /&gt;&lt;path style=&quot;fill:none; stroke:#000000;stroke-width:1&quot; d=&quot;M859.0 234.0 L768.0 234.0&quot; /&gt;&lt;polygon style=&quot;fill:#000000; stroke:#000000;&quot; points=&quot; 778 239 768 234 778 229 776 234&quot; /&gt;&lt;path style=&quot;fill:none; stroke:#000000;stroke-width:1&quot; d=&quot;M768.0 234.0 L859.0 234.0&quot; /&gt;&lt;polygon style=&quot;fill:#000000; stroke:#000000;&quot; points=&quot; 849 229 859 234 849 239 851 234&quot; /&gt;&lt;path style=&quot;fill:none; stroke:#000000;stroke-width:1&quot; d=&quot;M253.0 198.0 L253.0 140.0&quot; /&gt;&lt;polygon style=&quot;fill:#000000; stroke:#000000;&quot; points=&quot; 248 150 253 140 258 150 253 148&quot; /&gt;&lt;path style=&quot;fill:none; stroke:#000000;stroke-width:1&quot; d=&quot;M306.0 234.0 L419.0 234.0&quot; /&gt;&lt;polygon style=&quot;fill:#000000; stroke:#000000;&quot; points=&quot; 409 229 419 234 409 239 411 234&quot; /&gt;&lt;path style=&quot;fill:none; stroke:#000000;stroke-width:1&quot; d=&quot;M253.0 140.0 L253.0 198.0&quot; /&gt;&lt;polygon style=&quot;fill:#000000; stroke:#000000;&quot; points=&quot; 258 188 253 198 248 188 253 190&quot; /&gt;&lt;path style=&quot;fill:none; stroke:#009600;stroke-width:1&quot; d=&quot;M253.0 140.0 L253.0 198.0&quot; /&gt;&lt;polygon style=&quot;fill:#009600; stroke:#009600;&quot; points=&quot; 258 188 253 198 248 188 253 190&quot; /&gt;&lt;path style=&quot;fill:none; stroke:#000000;stroke-width:1&quot; d=&quot;M638.0 140.0 L707.0 205.0&quot; /&gt;&lt;polygon style=&quot;fill:#000000; stroke:#000000;&quot; points=&quot; 703 195 707 205 696 202 701 200&quot; /&gt;&lt;path style=&quot;fill:none; stroke:#000000;stroke-width:1&quot; d=&quot;M630.0 337.0 L707.0 263.0&quot; /&gt;&lt;polygon style=&quot;fill:#000000; stroke:#000000;&quot; points=&quot; 696 266 707 263 703 274 701 269&quot; /&gt;&lt;path style=&quot;fill:none; stroke:#009600;stroke-width:1&quot; d=&quot;M630.0 337.0 L707.0 263.0&quot; /&gt;&lt;polygon style=&quot;fill:#009600; stroke:#009600;&quot; points=&quot; 696 266 707 263 703 274 701 269&quot; /&gt;&lt;path style=&quot;fill:none; stroke:#000000;stroke-width:1&quot; d=&quot;M480.0 205.0 L548.0 140.0&quot; /&gt;&lt;polygon style=&quot;fill:#000000; stroke:#000000;&quot; points=&quot; 537 143 548 140 544 151 542 146&quot; /&gt;&lt;path style=&quot;fill:none; stroke:#000000;stroke-width:1&quot; d=&quot;M480.0 263.0 L556.0 337.0&quot; /&gt;&lt;polygon style=&quot;fill:#000000; stroke:#000000;&quot; points=&quot; 552 326 556 337 545 334 550 331&quot; /&gt;&lt;defs&gt;&lt;linearGradient xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot; xlink:href=&quot;#linearGradientFF6666FF9696FFB6B6&quot; id=&quot;linearGradientFF6666FF9696FFB6B6_1288767051&quot; x1=&quot;0&quot; y1=&quot;217.0&quot; x2=&quot;0&quot; y2=&quot;252.0&quot; gradientUnits=&quot;userSpaceOnUse&quot; xlink:type=&quot;simple&quot; xlink:actuate=&quot;onLoad&quot; xlink:show=&quot;other&quot; /&gt;&lt;linearGradient id=&quot;linearGradientFF6666FF9696FFB6B6&quot;&gt;&lt;stop style=&quot;stop-color:#FF6666;stop-opacity:1;&quot; offset=&quot;0.0&quot; id=&quot;stopFF6666&quot; /&gt;&lt;stop style=&quot;stop-color:#FF9696;stop-opacity:1;&quot; offset=&quot;0.5&quot; id=&quot;stopFF9696&quot; /&gt;&lt;stop style=&quot;stop-color:#FFB6B6;stop-opacity:1;&quot; offset=&quot;1.0&quot; id=&quot;stopFFB6B6&quot; /&gt;&lt;/linearGradient&gt;&lt;linearGradient xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot; xlink:href=&quot;#linearGradient66FF6696FF96B6FFB6&quot; id=&quot;linearGradient66FF6696FF96B6FFB6_1309939845&quot; x1=&quot;0&quot; y1=&quot;217.0&quot; x2=&quot;0&quot; y2=&quot;252.0&quot; gradientUnits=&quot;userSpaceOnUse&quot; xlink:type=&quot;simple&quot; xlink:actuate=&quot;onLoad&quot; xlink:show=&quot;other&quot; /&gt;&lt;linearGradient id=&quot;linearGradient66FF6696FF96B6FFB6&quot;&gt;&lt;stop style=&quot;stop-color:#66FF66;stop-opacity:1;&quot; offset=&quot;0.0&quot; id=&quot;stop66FF66&quot; /&gt;&lt;stop style=&quot;stop-color:#96FF96;stop-opacity:1;&quot; offset=&quot;0.5&quot; id=&quot;stop96FF96&quot; /&gt;&lt;stop style=&quot;stop-color:#B6FFB6;stop-opacity:1;&quot; offset=&quot;1.0&quot; id=&quot;stopB6FFB6&quot; /&gt;&lt;/linearGradient&gt;&lt;linearGradient xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot; xlink:href=&quot;#linearGradientF8FBFEEDF5FCDEEDFAD4E7F8E2E5E9&quot; id=&quot;linearGradientF8FBFEEDF5FCDEEDFAD4E7F8E2E5E9_1685806736&quot; x1=&quot;0&quot; y1=&quot;330.0&quot; x2=&quot;0&quot; y2=&quot;435.0&quot; gradientUnits=&quot;userSpaceOnUse&quot; xlink:type=&quot;simple&quot; xlink:actuate=&quot;onLoad&quot; xlink:show=&quot;other&quot; /&gt;&lt;linearGradient id=&quot;linearGradientF8FBFEEDF5FCDEEDFAD4E7F8E2E5E9&quot;&gt;&lt;stop style=&quot;stop-color:#F8FBFE;stop-opacity:1;&quot; offset=&quot;0.0&quot; id=&quot;stopF8FBFE&quot; /&gt;&lt;stop style=&quot;stop-color:#EDF5FC;stop-opacity:1;&quot; offset=&quot;0.25&quot; id=&quot;stopEDF5FC&quot; /&gt;&lt;stop style=&quot;stop-color:#DEEDFA;stop-opacity:1;&quot; offset=&quot;0.5&quot; id=&quot;stopDEEDFA&quot; /&gt;&lt;stop style=&quot;stop-color:#D4E7F8;stop-opacity:1;&quot; offset=&quot;0.75&quot; id=&quot;stopD4E7F8&quot; /&gt;&lt;stop style=&quot;stop-color:#E2E5E9;stop-opacity:1;&quot; offset=&quot;1.0&quot; id=&quot;stopE2E5E9&quot; /&gt;&lt;/linearGradient&gt;&lt;linearGradient xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot; xlink:href=&quot;#linearGradientF8FBFEEDF5FCDEEDFAD4E7F8E2E5E9&quot; id=&quot;linearGradientF8FBFEEDF5FCDEEDFAD4E7F8E2E5E9_810677082&quot; x1=&quot;0&quot; y1=&quot;200.0&quot; x2=&quot;0&quot; y2=&quot;306.0&quot; gradientUnits=&quot;userSpaceOnUse&quot; xlink:type=&quot;simple&quot; xlink:actuate=&quot;onLoad&quot; xlink:show=&quot;other&quot; /&gt;&lt;linearGradient xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot; xlink:href=&quot;#linearGradientF8FBFEEDF5FCDEEDFAD4E7F8E2E5E9&quot; id=&quot;linearGradientF8FBFEEDF5FCDEEDFAD4E7F8E2E5E9_1644385272&quot; x1=&quot;0&quot; y1=&quot;199.0&quot; x2=&quot;0&quot; y2=&quot;305.0&quot; gradientUnits=&quot;userSpaceOnUse&quot; xlink:type=&quot;simple&quot; xlink:actuate=&quot;onLoad&quot; xlink:show=&quot;other&quot; /&gt;&lt;linearGradient xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot; xlink:href=&quot;#linearGradientF8FBFEEDF5FCDEEDFAD4E7F8E2E5E9&quot; id=&quot;linearGradientF8FBFEEDF5FCDEEDFAD4E7F8E2E5E9_16686001&quot; x1=&quot;0&quot; y1=&quot;56.0&quot; x2=&quot;0&quot; y2=&quot;162.0&quot; gradientUnits=&quot;userSpaceOnUse&quot; xlink:type=&quot;simple&quot; xlink:actuate=&quot;onLoad&quot; xlink:show=&quot;other&quot; /&gt;&lt;linearGradient xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot; xlink:href=&quot;#linearGradientFAFBFCFFFFCC&quot; id=&quot;linearGradientFAFBFCFFFFCC_631545312&quot; x1=&quot;0&quot; y1=&quot;190.0&quot; x2=&quot;0&quot; y2=&quot;250.0&quot; gradientUnits=&quot;userSpaceOnUse&quot; xlink:type=&quot;simple&quot; xlink:actuate=&quot;onLoad&quot; xlink:show=&quot;other&quot; /&gt;&lt;linearGradient id=&quot;linearGradientFAFBFCFFFFCC&quot;&gt;&lt;stop style=&quot;stop-color:#FAFBFC;stop-opacity:1;&quot; offset=&quot;0.0&quot; id=&quot;stopFAFBFC&quot; /&gt;&lt;stop style=&quot;stop-color:#FFFFCC;stop-opacity:1;&quot; offset=&quot;1.0&quot; id=&quot;stopFFFFCC&quot; /&gt;&lt;/linearGradient&gt;&lt;linearGradient xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot; xlink:href=&quot;#linearGradientF8FBFEEDF5FCDEEDFAD4E7F8E2E5E9&quot; id=&quot;linearGradientF8FBFEEDF5FCDEEDFAD4E7F8E2E5E9_375607800&quot; x1=&quot;0&quot; y1=&quot;56.0&quot; x2=&quot;0&quot; y2=&quot;162.0&quot; gradientUnits=&quot;userSpaceOnUse&quot; xlink:type=&quot;simple&quot; xlink:actuate=&quot;onLoad&quot; xlink:show=&quot;other&quot; /&gt;&lt;linearGradient xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot; xlink:href=&quot;#linearGradientFAFBFCFFFFCC&quot; id=&quot;linearGradientFAFBFCFFFFCC_396985673&quot; x1=&quot;0&quot; y1=&quot;190.0&quot; x2=&quot;0&quot; y2=&quot;250.0&quot; gradientUnits=&quot;userSpaceOnUse&quot; xlink:type=&quot;simple&quot; xlink:actuate=&quot;onLoad&quot; xlink:show=&quot;other&quot; /&gt;&lt;linearGradient xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot; xlink:href=&quot;#linearGradientF8FBFEEDF5FCDEEDFAD4E7F8E2E5E9&quot; id=&quot;linearGradientF8FBFEEDF5FCDEEDFAD4E7F8E2E5E9_250169240&quot; x1=&quot;0&quot; y1=&quot;338.0&quot; x2=&quot;0&quot; y2=&quot;444.0&quot; gradientUnits=&quot;userSpaceOnUse&quot; xlink:type=&quot;simple&quot; xlink:actuate=&quot;onLoad&quot; xlink:show=&quot;other&quot; /&gt;&lt;/defs&gt;&lt;/svg&gt;</processDiagram>
+    <bpmnVersion>2</bpmnVersion>
+    <inheritFormSecurity>false</inheritFormSecurity>
+    <openInstances>0</openInstances>
+    <processStates/>
+    <favorito>false</favorito>
+    <mobileReady>true</mobileReady>
+    <rowId>0</rowId>
+  </ProcessDefinitionVersion>
+  <list>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>REGISTRO CARTORIO</processId>
+        <version>4</version>
+        <sequence>2</sequence>
+      </processStatePK>
+      <stateName>Fim</stateName>
+      <stateDescription>Fim</stateDescription>
+      <instruction>Atividade final do processo</instruction>
+      <deadlineTime>0</deadlineTime>
+      <joint>false</joint>
+      <agreementPercentage>0</agreementPercentage>
+      <engineAllocationId></engineAllocationId>
+      <engineAllocationConfiguration></engineAllocationConfiguration>
+      <selectColleague>1</selectColleague>
+      <initialState>false</initialState>
+      <notifyAuthorityDelay>true</notifyAuthorityDelay>
+      <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
+      <allowanceAuthorityTime>0</allowanceAuthorityTime>
+      <frequenceAuthorityTime>1</frequenceAuthorityTime>
+      <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
+      <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <notifyAuthorityFollowUp>false</notifyAuthorityFollowUp>
+      <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
+      <automatic>false</automatic>
+      <positionX>1100</positionX>
+      <positionY>217</positionY>
+      <forecastedEffortType>0</forecastedEffortType>
+      <forecastedEffort>0</forecastedEffort>
+      <notifyManagerFollowUp>false</notifyManagerFollowUp>
+      <notifyManagerDelay>false</notifyManagerDelay>
+      <allowanceManagerTime>0</allowanceManagerTime>
+      <frequenceManagerTime>0</frequenceManagerTime>
+      <inhibitTransfer>false</inhibitTransfer>
+      <periodId></periodId>
+      <stateType>6</stateType>
+      <bpmnType>60</bpmnType>
+      <counterSign>false</counterSign>
+      <digitalSignature>false</digitalSignature>
+      <signalId>0</signalId>
+      <openInstances>0</openInstances>
+      <destinationStates/>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>REGISTRO CARTORIO</processId>
+        <version>4</version>
+        <sequence>3</sequence>
+      </processStatePK>
+      <stateName>Início</stateName>
+      <stateDescription>Início</stateDescription>
+      <instruction></instruction>
+      <deadlineTime>0</deadlineTime>
+      <joint>false</joint>
+      <agreementPercentage>0</agreementPercentage>
+      <engineAllocationId>Papel</engineAllocationId>
+      <engineAllocationConfiguration>&lt;AssignmentController&gt;&lt;Role&gt;RC-Financeiro&lt;/Role&gt;&lt;/AssignmentController&gt;</engineAllocationConfiguration>
+      <selectColleague>1</selectColleague>
+      <initialState>true</initialState>
+      <notifyAuthorityDelay>false</notifyAuthorityDelay>
+      <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
+      <allowanceAuthorityTime>0</allowanceAuthorityTime>
+      <frequenceAuthorityTime>0</frequenceAuthorityTime>
+      <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
+      <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <notifyAuthorityFollowUp>true</notifyAuthorityFollowUp>
+      <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
+      <automatic>false</automatic>
+      <positionX>90</positionX>
+      <positionY>217</positionY>
+      <forecastedEffortType>0</forecastedEffortType>
+      <forecastedEffort>0</forecastedEffort>
+      <notifyManagerFollowUp>false</notifyManagerFollowUp>
+      <notifyManagerDelay>false</notifyManagerDelay>
+      <allowanceManagerTime>0</allowanceManagerTime>
+      <frequenceManagerTime>0</frequenceManagerTime>
+      <inhibitTransfer>false</inhibitTransfer>
+      <periodId>Default</periodId>
+      <stateType>0</stateType>
+      <bpmnType>10</bpmnType>
+      <counterSign>false</counterSign>
+      <digitalSignature>false</digitalSignature>
+      <noticeExpirationAuthorityTime>0</noticeExpirationAuthorityTime>
+      <noticeExpirationRequisitionerTime>0</noticeExpirationRequisitionerTime>
+      <noticeExpirationManagerTime>0</noticeExpirationManagerTime>
+      <signalId>0</signalId>
+      <openInstances>0</openInstances>
+      <destinationStates/>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>REGISTRO CARTORIO</processId>
+        <version>4</version>
+        <sequence>5</sequence>
+      </processStatePK>
+      <stateName>Iniciar Tratativas Contratos Registrados</stateName>
+      <stateDescription>Iniciar Tratativas Contratos Registrados</stateDescription>
+      <instruction></instruction>
+      <deadlineTime>0</deadlineTime>
+      <joint>false</joint>
+      <agreementPercentage>0</agreementPercentage>
+      <engineAllocationId></engineAllocationId>
+      <engineAllocationConfiguration></engineAllocationConfiguration>
+      <selectColleague>1</selectColleague>
+      <initialState>false</initialState>
+      <notifyAuthorityDelay>false</notifyAuthorityDelay>
+      <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
+      <allowanceAuthorityTime>0</allowanceAuthorityTime>
+      <frequenceAuthorityTime>0</frequenceAuthorityTime>
+      <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
+      <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
+      <transferAttachments>true</transferAttachments>
+      <subProcessId>TRATATIVAS CONTRATOS REGISTRADOS</subProcessId>
+      <formFolder>0</formFolder>
+      <notifyAuthorityFollowUp>false</notifyAuthorityFollowUp>
+      <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
+      <automatic>false</automatic>
+      <positionX>860</positionX>
+      <positionY>330</positionY>
+      <forecastedEffortType>0</forecastedEffortType>
+      <forecastedEffort>0</forecastedEffort>
+      <notifyManagerFollowUp>false</notifyManagerFollowUp>
+      <notifyManagerDelay>true</notifyManagerDelay>
+      <allowanceManagerTime>0</allowanceManagerTime>
+      <frequenceManagerTime>0</frequenceManagerTime>
+      <inhibitTransfer>false</inhibitTransfer>
+      <stateType>2</stateType>
+      <bpmnType>100</bpmnType>
+      <counterSign>false</counterSign>
+      <digitalSignature>false</digitalSignature>
+      <noticeExpirationAuthorityTime>0</noticeExpirationAuthorityTime>
+      <noticeExpirationRequisitionerTime>0</noticeExpirationRequisitionerTime>
+      <noticeExpirationManagerTime>0</noticeExpirationManagerTime>
+      <signalId>0</signalId>
+      <cancelSubProcess>true</cancelSubProcess>
+      <sendToNextTaskInSubProcess>true</sendToNextTaskInSubProcess>
+      <openInstances>0</openInstances>
+      <destinationStates/>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>REGISTRO CARTORIO</processId>
+        <version>4</version>
+        <sequence>6</sequence>
+      </processStatePK>
+      <stateName>Decisão Financeiro</stateName>
+      <stateDescription>Decisão Financeiro</stateDescription>
+      <instruction>Esta é uma atividade destinada ao setor financeiro e visa direcionar o registro à sua finalização. Nesse ponto, o responsável pode encaminhar o registro contratado à um término ou iniciar um novo fluxo de tratativas.</instruction>
+      <deadlineTime>57600</deadlineTime>
+      <joint>false</joint>
+      <agreementPercentage>0</agreementPercentage>
+      <engineAllocationId>Pool Papel</engineAllocationId>
+      <engineAllocationConfiguration>&lt;AssignmentController&gt;&lt;Role&gt;RC-Analise&lt;/Role&gt;&lt;/AssignmentController&gt;</engineAllocationConfiguration>
+      <selectColleague>1</selectColleague>
+      <initialState>false</initialState>
+      <notifyAuthorityDelay>false</notifyAuthorityDelay>
+      <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
+      <allowanceAuthorityTime>0</allowanceAuthorityTime>
+      <frequenceAuthorityTime>0</frequenceAuthorityTime>
+      <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
+      <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <notifyAuthorityFollowUp>true</notifyAuthorityFollowUp>
+      <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
+      <automatic>false</automatic>
+      <positionX>860</positionX>
+      <positionY>200</positionY>
+      <forecastedEffortType>0</forecastedEffortType>
+      <forecastedEffort>0</forecastedEffort>
+      <notifyManagerFollowUp>false</notifyManagerFollowUp>
+      <notifyManagerDelay>false</notifyManagerDelay>
+      <allowanceManagerTime>0</allowanceManagerTime>
+      <frequenceManagerTime>0</frequenceManagerTime>
+      <inhibitTransfer>false</inhibitTransfer>
+      <periodId>Default</periodId>
+      <stateType>0</stateType>
+      <bpmnType>80</bpmnType>
+      <counterSign>false</counterSign>
+      <digitalSignature>false</digitalSignature>
+      <noticeExpirationAuthorityTime>0</noticeExpirationAuthorityTime>
+      <noticeExpirationRequisitionerTime>0</noticeExpirationRequisitionerTime>
+      <noticeExpirationManagerTime>0</noticeExpirationManagerTime>
+      <signalId>0</signalId>
+      <executionType>0</executionType>
+      <deadlineFieldName></deadlineFieldName>
+      <openInstances>0</openInstances>
+      <destinationStates/>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>REGISTRO CARTORIO</processId>
+        <version>4</version>
+        <sequence>7</sequence>
+      </processStatePK>
+      <stateName>Registro Cartório</stateName>
+      <stateDescription>Registro Cartório</stateDescription>
+      <instruction>O registro em cartório é um procedimento que envolve a apresentação de um documento legalmente válido, o pagamento das taxas correspondentes e a análise e registro do documento pelo funcionário do cartório. Uma vez registrado, o documento recebe um número de identificação e é arquivado para referência futura.</instruction>
+      <deadlineTime>864000</deadlineTime>
+      <joint>false</joint>
+      <agreementPercentage>0</agreementPercentage>
+      <engineAllocationId>Pool Papel</engineAllocationId>
+      <engineAllocationConfiguration>&lt;AssignmentController&gt;&lt;Role&gt;RC-Registro&lt;/Role&gt;&lt;/AssignmentController&gt;</engineAllocationConfiguration>
+      <selectColleague>1</selectColleague>
+      <initialState>false</initialState>
+      <notifyAuthorityDelay>false</notifyAuthorityDelay>
+      <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
+      <allowanceAuthorityTime>0</allowanceAuthorityTime>
+      <frequenceAuthorityTime>0</frequenceAuthorityTime>
+      <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
+      <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <notifyAuthorityFollowUp>true</notifyAuthorityFollowUp>
+      <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
+      <automatic>false</automatic>
+      <positionX>200</positionX>
+      <positionY>199</positionY>
+      <forecastedEffortType>0</forecastedEffortType>
+      <forecastedEffort>0</forecastedEffort>
+      <notifyManagerFollowUp>false</notifyManagerFollowUp>
+      <notifyManagerDelay>false</notifyManagerDelay>
+      <allowanceManagerTime>0</allowanceManagerTime>
+      <frequenceManagerTime>0</frequenceManagerTime>
+      <inhibitTransfer>false</inhibitTransfer>
+      <periodId>Default</periodId>
+      <stateType>0</stateType>
+      <bpmnType>80</bpmnType>
+      <counterSign>false</counterSign>
+      <digitalSignature>false</digitalSignature>
+      <noticeExpirationAuthorityTime>0</noticeExpirationAuthorityTime>
+      <noticeExpirationRequisitionerTime>0</noticeExpirationRequisitionerTime>
+      <noticeExpirationManagerTime>0</noticeExpirationManagerTime>
+      <signalId>0</signalId>
+      <executionType>0</executionType>
+      <deadlineFieldName></deadlineFieldName>
+      <openInstances>0</openInstances>
+      <destinationStates/>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>REGISTRO CARTORIO</processId>
+        <version>4</version>
+        <sequence>16</sequence>
+      </processStatePK>
+      <stateName>Email Status - lote registrando</stateName>
+      <stateDescription>Email Status - lote registrando</stateDescription>
+      <instruction>Esta atividade é semiautomática e visa notificar o setor financeiro sobre o início do registro junto ao cartório.</instruction>
+      <deadlineTime>60</deadlineTime>
+      <joint>false</joint>
+      <agreementPercentage>0</agreementPercentage>
+      <engineAllocationId>Pool Papel</engineAllocationId>
+      <engineAllocationConfiguration>&lt;AssignmentController&gt;&lt;Role&gt;EnviaEmail&lt;/Role&gt;&lt;/AssignmentController&gt;</engineAllocationConfiguration>
+      <selectColleague>1</selectColleague>
+      <initialState>false</initialState>
+      <notifyAuthorityDelay>true</notifyAuthorityDelay>
+      <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
+      <allowanceAuthorityTime>3600</allowanceAuthorityTime>
+      <frequenceAuthorityTime>3600</frequenceAuthorityTime>
+      <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
+      <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <notifyAuthorityFollowUp>true</notifyAuthorityFollowUp>
+      <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
+      <automatic>false</automatic>
+      <positionX>200</positionX>
+      <positionY>56</positionY>
+      <forecastedEffortType>0</forecastedEffortType>
+      <forecastedEffort>0</forecastedEffort>
+      <notifyManagerFollowUp>false</notifyManagerFollowUp>
+      <notifyManagerDelay>false</notifyManagerDelay>
+      <allowanceManagerTime>0</allowanceManagerTime>
+      <frequenceManagerTime>0</frequenceManagerTime>
+      <inhibitTransfer>false</inhibitTransfer>
+      <periodId></periodId>
+      <stateType>0</stateType>
+      <bpmnType>80</bpmnType>
+      <counterSign>false</counterSign>
+      <digitalSignature>false</digitalSignature>
+      <noticeExpirationAuthorityTime>0</noticeExpirationAuthorityTime>
+      <noticeExpirationRequisitionerTime>0</noticeExpirationRequisitionerTime>
+      <noticeExpirationManagerTime>0</noticeExpirationManagerTime>
+      <signalId>0</signalId>
+      <executionType>0</executionType>
+      <deadlineFieldName></deadlineFieldName>
+      <openInstances>0</openInstances>
+      <destinationStates/>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>REGISTRO CARTORIO</processId>
+        <version>4</version>
+        <sequence>18</sequence>
+      </processStatePK>
+      <stateName>Join</stateName>
+      <stateDescription>Join</stateDescription>
+      <joint>false</joint>
+      <selectColleague>1</selectColleague>
+      <initialState>false</initialState>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <automatic>false</automatic>
+      <positionX>708</positionX>
+      <positionY>190</positionY>
+      <inhibitTransfer>false</inhibitTransfer>
+      <stateType>4</stateType>
+      <bpmnType>127</bpmnType>
+      <digitalSignature>false</digitalSignature>
+      <signalId>0</signalId>
+      <openInstances>0</openInstances>
+      <destinationStates/>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>REGISTRO CARTORIO</processId>
+        <version>4</version>
+        <sequence>19</sequence>
+      </processStatePK>
+      <stateName>Lacto despesas Cartorio (ZZZ)</stateName>
+      <stateDescription>Lacto despesas Cartorio (ZZZ)</stateDescription>
+      <instruction>Esta é uma atividade destinada ao departamento financeiro para avaliar o registro e lançar as despesas no contas a receber do cliente, conhecida internamente como despesa ZZZ.</instruction>
+      <deadlineTime>57600</deadlineTime>
+      <joint>false</joint>
+      <agreementPercentage>0</agreementPercentage>
+      <engineAllocationId>Pool Papel</engineAllocationId>
+      <engineAllocationConfiguration>&lt;AssignmentController&gt;&lt;Role&gt;RC-LancamentosZZZ&lt;/Role&gt;&lt;/AssignmentController&gt;</engineAllocationConfiguration>
+      <selectColleague>1</selectColleague>
+      <initialState>false</initialState>
+      <notifyAuthorityDelay>false</notifyAuthorityDelay>
+      <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
+      <allowanceAuthorityTime>0</allowanceAuthorityTime>
+      <frequenceAuthorityTime>0</frequenceAuthorityTime>
+      <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
+      <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <notifyAuthorityFollowUp>true</notifyAuthorityFollowUp>
+      <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
+      <automatic>false</automatic>
+      <positionX>540</positionX>
+      <positionY>56</positionY>
+      <forecastedEffortType>0</forecastedEffortType>
+      <forecastedEffort>0</forecastedEffort>
+      <notifyManagerFollowUp>false</notifyManagerFollowUp>
+      <notifyManagerDelay>false</notifyManagerDelay>
+      <allowanceManagerTime>0</allowanceManagerTime>
+      <frequenceManagerTime>0</frequenceManagerTime>
+      <inhibitTransfer>false</inhibitTransfer>
+      <periodId>Default</periodId>
+      <stateType>0</stateType>
+      <bpmnType>80</bpmnType>
+      <counterSign>false</counterSign>
+      <digitalSignature>false</digitalSignature>
+      <noticeExpirationAuthorityTime>0</noticeExpirationAuthorityTime>
+      <noticeExpirationRequisitionerTime>0</noticeExpirationRequisitionerTime>
+      <noticeExpirationManagerTime>0</noticeExpirationManagerTime>
+      <signalId>0</signalId>
+      <executionType>0</executionType>
+      <deadlineFieldName></deadlineFieldName>
+      <openInstances>0</openInstances>
+      <destinationStates/>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>REGISTRO CARTORIO</processId>
+        <version>4</version>
+        <sequence>20</sequence>
+      </processStatePK>
+      <stateName>Paralelo</stateName>
+      <stateDescription>Paralelo</stateDescription>
+      <joint>false</joint>
+      <selectColleague>1</selectColleague>
+      <initialState>false</initialState>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <automatic>false</automatic>
+      <positionX>420</positionX>
+      <positionY>190</positionY>
+      <inhibitTransfer>false</inhibitTransfer>
+      <stateType>3</stateType>
+      <bpmnType>126</bpmnType>
+      <digitalSignature>false</digitalSignature>
+      <signalId>0</signalId>
+      <openInstances>0</openInstances>
+      <destinationStates/>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>REGISTRO CARTORIO</processId>
+        <version>4</version>
+        <sequence>21</sequence>
+      </processStatePK>
+      <stateName>Email Status - lote registrado</stateName>
+      <stateDescription>Email Status - lote registrado</stateDescription>
+      <instruction>Esta atividade é semiautomática e visa notificar o setor financeiro sobre o término do registro junto ao cartório.</instruction>
+      <deadlineTime>60</deadlineTime>
+      <joint>false</joint>
+      <agreementPercentage>0</agreementPercentage>
+      <engineAllocationId>Papel</engineAllocationId>
+      <engineAllocationConfiguration>&lt;AssignmentController&gt;&lt;Role&gt;EnviaEmail&lt;/Role&gt;&lt;/AssignmentController&gt;</engineAllocationConfiguration>
+      <selectColleague>1</selectColleague>
+      <initialState>false</initialState>
+      <notifyAuthorityDelay>true</notifyAuthorityDelay>
+      <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
+      <allowanceAuthorityTime>3600</allowanceAuthorityTime>
+      <frequenceAuthorityTime>3600</frequenceAuthorityTime>
+      <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
+      <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <notifyAuthorityFollowUp>true</notifyAuthorityFollowUp>
+      <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
+      <automatic>false</automatic>
+      <positionX>540</positionX>
+      <positionY>338</positionY>
+      <forecastedEffortType>0</forecastedEffortType>
+      <forecastedEffort>0</forecastedEffort>
+      <notifyManagerFollowUp>false</notifyManagerFollowUp>
+      <notifyManagerDelay>false</notifyManagerDelay>
+      <allowanceManagerTime>0</allowanceManagerTime>
+      <frequenceManagerTime>0</frequenceManagerTime>
+      <inhibitTransfer>false</inhibitTransfer>
+      <periodId></periodId>
+      <stateType>0</stateType>
+      <bpmnType>80</bpmnType>
+      <counterSign>false</counterSign>
+      <digitalSignature>false</digitalSignature>
+      <noticeExpirationAuthorityTime>0</noticeExpirationAuthorityTime>
+      <noticeExpirationRequisitionerTime>0</noticeExpirationRequisitionerTime>
+      <noticeExpirationManagerTime>0</noticeExpirationManagerTime>
+      <signalId>0</signalId>
+      <executionType>0</executionType>
+      <deadlineFieldName></deadlineFieldName>
+      <openInstances>0</openInstances>
+      <destinationStates/>
+    </ProcessState>
+  </list>
+  <list/>
+  <list>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>REGISTRO CARTORIO</processId>
+        <version>4</version>
+        <linkSequence>8</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>3</initialStateSequence>
+      <finalStateSequence>7</finalStateSequence>
+      <returnLabel></returnLabel>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+      <name></name>
+      <movementTitle></movementTitle>
+      <movementDescription></movementDescription>
+      <movementAccessLinkDescription></movementAccessLinkDescription>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>REGISTRO CARTORIO</processId>
+        <version>4</version>
+        <linkSequence>10</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>5</initialStateSequence>
+      <finalStateSequence>2</finalStateSequence>
+      <returnLabel></returnLabel>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+      <name></name>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>REGISTRO CARTORIO</processId>
+        <version>4</version>
+        <linkSequence>11</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>6</initialStateSequence>
+      <finalStateSequence>2</finalStateSequence>
+      <returnLabel></returnLabel>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+      <name></name>
+      <movementTitle></movementTitle>
+      <movementDescription></movementDescription>
+      <movementAccessLinkDescription></movementAccessLinkDescription>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>REGISTRO CARTORIO</processId>
+        <version>4</version>
+        <linkSequence>12</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>6</initialStateSequence>
+      <finalStateSequence>5</finalStateSequence>
+      <returnLabel></returnLabel>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+      <name></name>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>REGISTRO CARTORIO</processId>
+        <version>4</version>
+        <linkSequence>17</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>7</initialStateSequence>
+      <finalStateSequence>16</finalStateSequence>
+      <returnLabel></returnLabel>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+      <name></name>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>REGISTRO CARTORIO</processId>
+        <version>4</version>
+        <linkSequence>22</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>19</initialStateSequence>
+      <finalStateSequence>18</finalStateSequence>
+      <returnLabel></returnLabel>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+      <name></name>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>REGISTRO CARTORIO</processId>
+        <version>4</version>
+        <linkSequence>23</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>20</initialStateSequence>
+      <finalStateSequence>19</finalStateSequence>
+      <returnLabel></returnLabel>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+      <name></name>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>REGISTRO CARTORIO</processId>
+        <version>4</version>
+        <linkSequence>24</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>20</initialStateSequence>
+      <finalStateSequence>21</finalStateSequence>
+      <returnLabel></returnLabel>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+      <name></name>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>REGISTRO CARTORIO</processId>
+        <version>4</version>
+        <linkSequence>25</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>21</initialStateSequence>
+      <finalStateSequence>18</finalStateSequence>
+      <returnLabel></returnLabel>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+      <name></name>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>REGISTRO CARTORIO</processId>
+        <version>4</version>
+        <linkSequence>26</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>21</initialStateSequence>
+      <finalStateSequence>18</finalStateSequence>
+      <returnLabel></returnLabel>
+      <automaticLink>true</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+      <name></name>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>REGISTRO CARTORIO</processId>
+        <version>4</version>
+        <linkSequence>27</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>7</initialStateSequence>
+      <finalStateSequence>20</finalStateSequence>
+      <returnLabel></returnLabel>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+      <name></name>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>REGISTRO CARTORIO</processId>
+        <version>4</version>
+        <linkSequence>28</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>18</initialStateSequence>
+      <finalStateSequence>6</finalStateSequence>
+      <returnLabel></returnLabel>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+      <name></name>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>REGISTRO CARTORIO</processId>
+        <version>4</version>
+        <linkSequence>29</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>7</initialStateSequence>
+      <finalStateSequence>3</finalStateSequence>
+      <returnLabel></returnLabel>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+      <name></name>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>REGISTRO CARTORIO</processId>
+        <version>4</version>
+        <linkSequence>30</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>16</initialStateSequence>
+      <finalStateSequence>7</finalStateSequence>
+      <returnLabel></returnLabel>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+      <name></name>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>REGISTRO CARTORIO</processId>
+        <version>4</version>
+        <linkSequence>31</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>16</initialStateSequence>
+      <finalStateSequence>7</finalStateSequence>
+      <returnLabel></returnLabel>
+      <automaticLink>true</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+      <name></name>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>REGISTRO CARTORIO</processId>
+        <version>4</version>
+        <linkSequence>32</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>6</initialStateSequence>
+      <finalStateSequence>18</finalStateSequence>
+      <returnLabel></returnLabel>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+      <name></name>
+    </ProcessLink>
+  </list>
+  <list/>
+  <list>
+    <WorkflowProcessEvent>
+      <workflowProcessEventPK>
+        <companyId>1</companyId>
+        <processId>REGISTRO CARTORIO</processId>
+        <version>4</version>
+        <eventId>afterProcessCreate</eventId>
+      </workflowProcessEventPK>
+      <eventDescription>function afterProcessCreate(processId){&#xd;
+	hAPI.setCardValue(&quot;numProcess&quot;, processId)&#xd;
+}</eventDescription>
+    </WorkflowProcessEvent>
+    <WorkflowProcessEvent>
+      <workflowProcessEventPK>
+        <companyId>1</companyId>
+        <processId>REGISTRO CARTORIO</processId>
+        <version>4</version>
+        <eventId>beforeSendData</eventId>
+      </workflowProcessEventPK>
+      <eventDescription>function beforeSendData(customFields,customFacts){
+    customFields[0] =hAPI.getCardValue(&quot;motivo&quot;);
+	customFields[1] =hAPI.getCardValue(&quot;empreendimento&quot;);
+}
+</eventDescription>
+    </WorkflowProcessEvent>
+    <WorkflowProcessEvent>
+      <workflowProcessEventPK>
+        <companyId>1</companyId>
+        <processId>REGISTRO CARTORIO</processId>
+        <version>4</version>
+        <eventId>beforeStateEntry</eventId>
+      </workflowProcessEventPK>
+      <eventDescription>function beforeStateEntry(sequenceId){&#xd;
+    if(sequenceId == 16){&#xd;
+        var Filial = hAPI.getCardValue(&quot;codigoFilial&quot;)&#xd;
+        var codcli = hAPI.getCardValue(&quot;codigoCliente&quot;)&#xd;
+        var cliente = hAPI.getCardValue(&quot;nomeCliente&quot;)&#xd;
+        var produto = hAPI.getCardValue(&quot;empreendimento&quot;) +&quot; - &quot;+ hAPI.getCardValue(&quot;lote&quot;)+&quot; - &quot;+hAPI.getCardValue(&quot;quadra&quot;)&#xd;
+        var link = &quot;https://thomasie156267.fluig.cloudtotvs.com.br/portal/p/1/pageworkflowview?app_ecm_workflowview_detailsProcessInstanceID=&quot;+hAPI.getCardValue(&quot;numProcess&quot;)&#xd;
+        var soli = hAPI.getCardValue(&quot;numProcess&quot;)&#xd;
+        var parametros = new java.util.HashMap();&#xd;
+        parametros.put(&quot;ACAO&quot;, &quot;está sendo registrado&quot;);&#xd;
+        parametros.put(&quot;FILIAL&quot;, Filial);&#xd;
+        parametros.put(&quot;CODCLI&quot;, codcli);&#xd;
+        parametros.put(&quot;CLIENTE&quot;, cliente);&#xd;
+        parametros.put(&quot;PRODUTO&quot;, produto);&#xd;
+        parametros.put(&quot;LINKSOLI&quot;, link);&#xd;
+        parametros.put(&quot;SOLICITACAO&quot;, soli);&#xd;
+        parametros.put(&quot;subject&quot;, &quot;Aviso: Contrato sendo registrado no Cartório&quot;);&#xd;
+        //Monta lista de destinatários&#xd;
+        var destinatarios = new java.util.ArrayList();&#xd;
+        destinatarios.add(&quot;jose.vitor@thcm.com.br&quot;);&#xd;
+        destinatarios.add(&quot;financeiro@thcm.com.br&quot;);&#xd;
+        notifier.notify(&quot;admin&quot;, &quot;email_regcart&quot;, parametros, destinatarios, &quot;text/html&quot;);&#xd;
+    }&#xd;
+	if(sequenceId == 21){&#xd;
+        var Filial = hAPI.getCardValue(&quot;codigoFilial&quot;)&#xd;
+        var codcli = hAPI.getCardValue(&quot;codigoCliente&quot;)&#xd;
+        var cliente = hAPI.getCardValue(&quot;nomeCliente&quot;)&#xd;
+        var produto = hAPI.getCardValue(&quot;empreendimento&quot;) +&quot; - &quot;+ hAPI.getCardValue(&quot;lote&quot;)+&quot; - &quot;+hAPI.getCardValue(&quot;quadra&quot;)&#xd;
+        var link = &quot;https://thomasie156267.fluig.cloudtotvs.com.br/portal/p/1/pageworkflowview?app_ecm_workflowview_detailsProcessInstanceID=&quot;+hAPI.getCardValue(&quot;numProcess&quot;)&#xd;
+        var soli = hAPI.getCardValue(&quot;numProcess&quot;)&#xd;
+        var parametros = new java.util.HashMap();&#xd;
+        parametros.put(&quot;ACAO&quot;, &quot;foi registrado&quot;);&#xd;
+        parametros.put(&quot;FILIAL&quot;, Filial);&#xd;
+        parametros.put(&quot;CODCLI&quot;, codcli);&#xd;
+        parametros.put(&quot;CLIENTE&quot;, cliente);&#xd;
+        parametros.put(&quot;PRODUTO&quot;, produto);&#xd;
+        parametros.put(&quot;LINKSOLI&quot;, link);&#xd;
+        parametros.put(&quot;SOLICITACAO&quot;, soli);&#xd;
+        parametros.put(&quot;subject&quot;, &quot;Aviso: Contrato registrado no Cartório&quot;);&#xd;
+        //Monta lista de destinatários&#xd;
+        var destinatarios = new java.util.ArrayList();&#xd;
+        destinatarios.add(&quot;jose.vitor@thcm.com.br&quot;);&#xd;
+        destinatarios.add(&quot;financeiro@thcm.com.br&quot;);&#xd;
+        notifier.notify(&quot;admin&quot;, &quot;email_regcart&quot;, parametros, destinatarios, &quot;text/html&quot;);&#xd;
+    }&#xd;
+}</eventDescription>
+    </WorkflowProcessEvent>
+  </list>
+  <list/>
+  <list>
+    <SwimLane>
+      <swimLanePK>
+        <companyId>1</companyId>
+        <processId>REGISTRO CARTORIO</processId>
+        <version>4</version>
+        <sequence>1</sequence>
+      </swimLanePK>
+      <stateName>Processo</stateName>
+      <positionX>30</positionX>
+      <positionY>30</positionY>
+      <color>9FC1C6</color>
+      <height>415</height>
+      <width>1153</width>
+      <type>1</type>
+      <parentSequence>0</parentSequence>
+    </SwimLane>
+  </list>
+  <list/>
+  <list/>
+  <list/>
+  <list/>
+  <list/>
+  <list>
+    <ProcessFormField>
+      <processFormFieldPK>
+        <companyId>1</companyId>
+        <processId>REGISTRO CARTORIO</processId>
+        <fieldId>codigoCliente</fieldId>
+      </processFormFieldPK>
+      <fieldDescription>codigoCliente</fieldDescription>
+      <slotId>1</slotId>
+    </ProcessFormField>
+    <ProcessFormField>
+      <processFormFieldPK>
+        <companyId>1</companyId>
+        <processId>REGISTRO CARTORIO</processId>
+        <fieldId>codigoFilial</fieldId>
+      </processFormFieldPK>
+      <fieldDescription>codigoFilial</fieldDescription>
+      <slotId>2</slotId>
+    </ProcessFormField>
+    <ProcessFormField>
+      <processFormFieldPK>
+        <companyId>1</companyId>
+        <processId>REGISTRO CARTORIO</processId>
+        <fieldId>DataRegistro</fieldId>
+      </processFormFieldPK>
+      <fieldDescription>DataRegistro</fieldDescription>
+      <slotId>3</slotId>
+    </ProcessFormField>
+    <ProcessFormField>
+      <processFormFieldPK>
+        <companyId>1</companyId>
+        <processId>REGISTRO CARTORIO</processId>
+        <fieldId>empreendimento</fieldId>
+      </processFormFieldPK>
+      <fieldDescription>empreendimento</fieldDescription>
+      <slotId>4</slotId>
+    </ProcessFormField>
+    <ProcessFormField>
+      <processFormFieldPK>
+        <companyId>1</companyId>
+        <processId>REGISTRO CARTORIO</processId>
+        <fieldId>lote</fieldId>
+      </processFormFieldPK>
+      <fieldDescription>lote</fieldDescription>
+      <slotId>5</slotId>
+    </ProcessFormField>
+    <ProcessFormField>
+      <processFormFieldPK>
+        <companyId>1</companyId>
+        <processId>REGISTRO CARTORIO</processId>
+        <fieldId>motivo</fieldId>
+      </processFormFieldPK>
+      <fieldDescription>motivo</fieldDescription>
+      <slotId>8</slotId>
+    </ProcessFormField>
+    <ProcessFormField>
+      <processFormFieldPK>
+        <companyId>1</companyId>
+        <processId>REGISTRO CARTORIO</processId>
+        <fieldId>pesquisa</fieldId>
+      </processFormFieldPK>
+      <fieldDescription>pesquisa</fieldDescription>
+      <slotId>6</slotId>
+    </ProcessFormField>
+    <ProcessFormField>
+      <processFormFieldPK>
+        <companyId>1</companyId>
+        <processId>REGISTRO CARTORIO</processId>
+        <fieldId>quadra</fieldId>
+      </processFormFieldPK>
+      <fieldDescription>quadra</fieldDescription>
+      <slotId>7</slotId>
+    </ProcessFormField>
+  </list>
+  <list/>
+  <list>
+    <SubProcessFieldRelationship>
+      <formMapId>1132</formMapId>
+      <tenantId>1</tenantId>
+      <processCode>REGISTRO CARTORIO</processCode>
+      <stateSequence>5</stateSequence>
+      <version>4</version>
+      <subProcessCode>TRATATIVAS CONTRATOS REGISTRADOS</subProcessCode>
+      <processField>cpfCliente</processField>
+      <subProcessField>cpfCliente</subProcessField>
+      <mapFlow>2</mapFlow>
+    </SubProcessFieldRelationship>
+    <SubProcessFieldRelationship>
+      <formMapId>1133</formMapId>
+      <tenantId>1</tenantId>
+      <processCode>REGISTRO CARTORIO</processCode>
+      <stateSequence>5</stateSequence>
+      <version>4</version>
+      <subProcessCode>TRATATIVAS CONTRATOS REGISTRADOS</subProcessCode>
+      <processField>Tel</processField>
+      <subProcessField>Tel</subProcessField>
+      <mapFlow>2</mapFlow>
+    </SubProcessFieldRelationship>
+    <SubProcessFieldRelationship>
+      <formMapId>1134</formMapId>
+      <tenantId>1</tenantId>
+      <processCode>REGISTRO CARTORIO</processCode>
+      <stateSequence>5</stateSequence>
+      <version>4</version>
+      <subProcessCode>TRATATIVAS CONTRATOS REGISTRADOS</subProcessCode>
+      <processField>BairroCOB</processField>
+      <subProcessField>BairroCOB</subProcessField>
+      <mapFlow>2</mapFlow>
+    </SubProcessFieldRelationship>
+    <SubProcessFieldRelationship>
+      <formMapId>1135</formMapId>
+      <tenantId>1</tenantId>
+      <processCode>REGISTRO CARTORIO</processCode>
+      <stateSequence>5</stateSequence>
+      <version>4</version>
+      <subProcessCode>TRATATIVAS CONTRATOS REGISTRADOS</subProcessCode>
+      <processField>cidade</processField>
+      <subProcessField>cidade</subProcessField>
+      <mapFlow>2</mapFlow>
+    </SubProcessFieldRelationship>
+    <SubProcessFieldRelationship>
+      <formMapId>1136</formMapId>
+      <tenantId>1</tenantId>
+      <processCode>REGISTRO CARTORIO</processCode>
+      <stateSequence>5</stateSequence>
+      <version>4</version>
+      <subProcessCode>TRATATIVAS CONTRATOS REGISTRADOS</subProcessCode>
+      <processField>CadMun</processField>
+      <subProcessField>CadMun</subProcessField>
+      <mapFlow>2</mapFlow>
+    </SubProcessFieldRelationship>
+    <SubProcessFieldRelationship>
+      <formMapId>1137</formMapId>
+      <tenantId>1</tenantId>
+      <processCode>REGISTRO CARTORIO</processCode>
+      <stateSequence>5</stateSequence>
+      <version>4</version>
+      <subProcessCode>TRATATIVAS CONTRATOS REGISTRADOS</subProcessCode>
+      <processField>estado</processField>
+      <subProcessField>estado</subProcessField>
+      <mapFlow>2</mapFlow>
+    </SubProcessFieldRelationship>
+    <SubProcessFieldRelationship>
+      <formMapId>1138</formMapId>
+      <tenantId>1</tenantId>
+      <processCode>REGISTRO CARTORIO</processCode>
+      <stateSequence>5</stateSequence>
+      <version>4</version>
+      <subProcessCode>TRATATIVAS CONTRATOS REGISTRADOS</subProcessCode>
+      <processField>DataRegistro</processField>
+      <subProcessField>DataRegistro</subProcessField>
+      <mapFlow>2</mapFlow>
+    </SubProcessFieldRelationship>
+    <SubProcessFieldRelationship>
+      <formMapId>1139</formMapId>
+      <tenantId>1</tenantId>
+      <processCode>REGISTRO CARTORIO</processCode>
+      <stateSequence>5</stateSequence>
+      <version>4</version>
+      <subProcessCode>TRATATIVAS CONTRATOS REGISTRADOS</subProcessCode>
+      <processField>empreendimento</processField>
+      <subProcessField>empreendimento</subProcessField>
+      <mapFlow>2</mapFlow>
+    </SubProcessFieldRelationship>
+    <SubProcessFieldRelationship>
+      <formMapId>1140</formMapId>
+      <tenantId>1</tenantId>
+      <processCode>REGISTRO CARTORIO</processCode>
+      <stateSequence>5</stateSequence>
+      <version>4</version>
+      <subProcessCode>TRATATIVAS CONTRATOS REGISTRADOS</subProcessCode>
+      <processField>estadoCOB</processField>
+      <subProcessField>estadoCOB</subProcessField>
+      <mapFlow>2</mapFlow>
+    </SubProcessFieldRelationship>
+    <SubProcessFieldRelationship>
+      <formMapId>1141</formMapId>
+      <tenantId>1</tenantId>
+      <processCode>REGISTRO CARTORIO</processCode>
+      <stateSequence>5</stateSequence>
+      <version>4</version>
+      <subProcessCode>TRATATIVAS CONTRATOS REGISTRADOS</subProcessCode>
+      <processField>enderecoCOB</processField>
+      <subProcessField>enderecoCOB</subProcessField>
+      <mapFlow>2</mapFlow>
+    </SubProcessFieldRelationship>
+    <SubProcessFieldRelationship>
+      <formMapId>1142</formMapId>
+      <tenantId>1</tenantId>
+      <processCode>REGISTRO CARTORIO</processCode>
+      <stateSequence>5</stateSequence>
+      <version>4</version>
+      <subProcessCode>TRATATIVAS CONTRATOS REGISTRADOS</subProcessCode>
+      <processField>CEPCOB</processField>
+      <subProcessField>CEPCOB</subProcessField>
+      <mapFlow>2</mapFlow>
+    </SubProcessFieldRelationship>
+    <SubProcessFieldRelationship>
+      <formMapId>1143</formMapId>
+      <tenantId>1</tenantId>
+      <processCode>REGISTRO CARTORIO</processCode>
+      <stateSequence>5</stateSequence>
+      <version>4</version>
+      <subProcessCode>TRATATIVAS CONTRATOS REGISTRADOS</subProcessCode>
+      <processField>endereco</processField>
+      <subProcessField>endereco</subProcessField>
+      <mapFlow>2</mapFlow>
+    </SubProcessFieldRelationship>
+    <SubProcessFieldRelationship>
+      <formMapId>1144</formMapId>
+      <tenantId>1</tenantId>
+      <processCode>REGISTRO CARTORIO</processCode>
+      <stateSequence>5</stateSequence>
+      <version>4</version>
+      <subProcessCode>TRATATIVAS CONTRATOS REGISTRADOS</subProcessCode>
+      <processField>codigoFilial</processField>
+      <subProcessField>codigoFilial</subProcessField>
+      <mapFlow>2</mapFlow>
+    </SubProcessFieldRelationship>
+    <SubProcessFieldRelationship>
+      <formMapId>1145</formMapId>
+      <tenantId>1</tenantId>
+      <processCode>REGISTRO CARTORIO</processCode>
+      <stateSequence>5</stateSequence>
+      <version>4</version>
+      <subProcessCode>TRATATIVAS CONTRATOS REGISTRADOS</subProcessCode>
+      <processField>pesquisa</processField>
+      <subProcessField>pesquisa</subProcessField>
+      <mapFlow>2</mapFlow>
+    </SubProcessFieldRelationship>
+    <SubProcessFieldRelationship>
+      <formMapId>1146</formMapId>
+      <tenantId>1</tenantId>
+      <processCode>REGISTRO CARTORIO</processCode>
+      <stateSequence>5</stateSequence>
+      <version>4</version>
+      <subProcessCode>TRATATIVAS CONTRATOS REGISTRADOS</subProcessCode>
+      <processField>cidadeCOB</processField>
+      <subProcessField>cidadeCOB</subProcessField>
+      <mapFlow>2</mapFlow>
+    </SubProcessFieldRelationship>
+    <SubProcessFieldRelationship>
+      <formMapId>1147</formMapId>
+      <tenantId>1</tenantId>
+      <processCode>REGISTRO CARTORIO</processCode>
+      <stateSequence>5</stateSequence>
+      <version>4</version>
+      <subProcessCode>TRATATIVAS CONTRATOS REGISTRADOS</subProcessCode>
+      <processField>codigoCliente</processField>
+      <subProcessField>codigoCliente</subProcessField>
+      <mapFlow>2</mapFlow>
+    </SubProcessFieldRelationship>
+    <SubProcessFieldRelationship>
+      <formMapId>1148</formMapId>
+      <tenantId>1</tenantId>
+      <processCode>REGISTRO CARTORIO</processCode>
+      <stateSequence>5</stateSequence>
+      <version>4</version>
+      <subProcessCode>TRATATIVAS CONTRATOS REGISTRADOS</subProcessCode>
+      <processField>nomeCliente</processField>
+      <subProcessField>nomeCliente</subProcessField>
+      <mapFlow>2</mapFlow>
+    </SubProcessFieldRelationship>
+    <SubProcessFieldRelationship>
+      <formMapId>1149</formMapId>
+      <tenantId>1</tenantId>
+      <processCode>REGISTRO CARTORIO</processCode>
+      <stateSequence>5</stateSequence>
+      <version>4</version>
+      <subProcessCode>TRATATIVAS CONTRATOS REGISTRADOS</subProcessCode>
+      <processField>quadra</processField>
+      <subProcessField>quadra</subProcessField>
+      <mapFlow>2</mapFlow>
+    </SubProcessFieldRelationship>
+    <SubProcessFieldRelationship>
+      <formMapId>1150</formMapId>
+      <tenantId>1</tenantId>
+      <processCode>REGISTRO CARTORIO</processCode>
+      <stateSequence>5</stateSequence>
+      <version>4</version>
+      <subProcessCode>TRATATIVAS CONTRATOS REGISTRADOS</subProcessCode>
+      <processField>BairroCOM</processField>
+      <subProcessField>BairroCOM</subProcessField>
+      <mapFlow>2</mapFlow>
+    </SubProcessFieldRelationship>
+    <SubProcessFieldRelationship>
+      <formMapId>1151</formMapId>
+      <tenantId>1</tenantId>
+      <processCode>REGISTRO CARTORIO</processCode>
+      <stateSequence>5</stateSequence>
+      <version>4</version>
+      <subProcessCode>TRATATIVAS CONTRATOS REGISTRADOS</subProcessCode>
+      <processField>Email</processField>
+      <subProcessField>Email</subProcessField>
+      <mapFlow>2</mapFlow>
+    </SubProcessFieldRelationship>
+    <SubProcessFieldRelationship>
+      <formMapId>1152</formMapId>
+      <tenantId>1</tenantId>
+      <processCode>REGISTRO CARTORIO</processCode>
+      <stateSequence>5</stateSequence>
+      <version>4</version>
+      <subProcessCode>TRATATIVAS CONTRATOS REGISTRADOS</subProcessCode>
+      <processField>Bairro</processField>
+      <subProcessField>Bairro</subProcessField>
+      <mapFlow>2</mapFlow>
+    </SubProcessFieldRelationship>
+    <SubProcessFieldRelationship>
+      <formMapId>1153</formMapId>
+      <tenantId>1</tenantId>
+      <processCode>REGISTRO CARTORIO</processCode>
+      <stateSequence>5</stateSequence>
+      <version>4</version>
+      <subProcessCode>TRATATIVAS CONTRATOS REGISTRADOS</subProcessCode>
+      <processField>estadoCOM</processField>
+      <subProcessField>estadoCOM</subProcessField>
+      <mapFlow>2</mapFlow>
+    </SubProcessFieldRelationship>
+    <SubProcessFieldRelationship>
+      <formMapId>1154</formMapId>
+      <tenantId>1</tenantId>
+      <processCode>REGISTRO CARTORIO</processCode>
+      <stateSequence>5</stateSequence>
+      <version>4</version>
+      <subProcessCode>TRATATIVAS CONTRATOS REGISTRADOS</subProcessCode>
+      <processField>enderecoCOM</processField>
+      <subProcessField>enderecoCOM</subProcessField>
+      <mapFlow>2</mapFlow>
+    </SubProcessFieldRelationship>
+    <SubProcessFieldRelationship>
+      <formMapId>1155</formMapId>
+      <tenantId>1</tenantId>
+      <processCode>REGISTRO CARTORIO</processCode>
+      <stateSequence>5</stateSequence>
+      <version>4</version>
+      <subProcessCode>TRATATIVAS CONTRATOS REGISTRADOS</subProcessCode>
+      <processField>rgCliente</processField>
+      <subProcessField>rgCliente</subProcessField>
+      <mapFlow>2</mapFlow>
+    </SubProcessFieldRelationship>
+    <SubProcessFieldRelationship>
+      <formMapId>1156</formMapId>
+      <tenantId>1</tenantId>
+      <processCode>REGISTRO CARTORIO</processCode>
+      <stateSequence>5</stateSequence>
+      <version>4</version>
+      <subProcessCode>TRATATIVAS CONTRATOS REGISTRADOS</subProcessCode>
+      <processField>CEPCOM</processField>
+      <subProcessField>CEPCOM</subProcessField>
+      <mapFlow>2</mapFlow>
+    </SubProcessFieldRelationship>
+    <SubProcessFieldRelationship>
+      <formMapId>1157</formMapId>
+      <tenantId>1</tenantId>
+      <processCode>REGISTRO CARTORIO</processCode>
+      <stateSequence>5</stateSequence>
+      <version>4</version>
+      <subProcessCode>TRATATIVAS CONTRATOS REGISTRADOS</subProcessCode>
+      <processField>NumeroRegistro</processField>
+      <subProcessField>NumeroRegistro</subProcessField>
+      <mapFlow>2</mapFlow>
+    </SubProcessFieldRelationship>
+    <SubProcessFieldRelationship>
+      <formMapId>1158</formMapId>
+      <tenantId>1</tenantId>
+      <processCode>REGISTRO CARTORIO</processCode>
+      <stateSequence>5</stateSequence>
+      <version>4</version>
+      <subProcessCode>TRATATIVAS CONTRATOS REGISTRADOS</subProcessCode>
+      <processField>motivo</processField>
+      <subProcessField>motivo</subProcessField>
+      <mapFlow>2</mapFlow>
+    </SubProcessFieldRelationship>
+    <SubProcessFieldRelationship>
+      <formMapId>1159</formMapId>
+      <tenantId>1</tenantId>
+      <processCode>REGISTRO CARTORIO</processCode>
+      <stateSequence>5</stateSequence>
+      <version>4</version>
+      <subProcessCode>TRATATIVAS CONTRATOS REGISTRADOS</subProcessCode>
+      <processField>lote</processField>
+      <subProcessField>lote</subProcessField>
+      <mapFlow>2</mapFlow>
+    </SubProcessFieldRelationship>
+    <SubProcessFieldRelationship>
+      <formMapId>1160</formMapId>
+      <tenantId>1</tenantId>
+      <processCode>REGISTRO CARTORIO</processCode>
+      <stateSequence>5</stateSequence>
+      <version>4</version>
+      <subProcessCode>TRATATIVAS CONTRATOS REGISTRADOS</subProcessCode>
+      <processField>CNPJ</processField>
+      <subProcessField>CNPJ</subProcessField>
+      <mapFlow>2</mapFlow>
+    </SubProcessFieldRelationship>
+    <SubProcessFieldRelationship>
+      <formMapId>1161</formMapId>
+      <tenantId>1</tenantId>
+      <processCode>REGISTRO CARTORIO</processCode>
+      <stateSequence>5</stateSequence>
+      <version>4</version>
+      <subProcessCode>TRATATIVAS CONTRATOS REGISTRADOS</subProcessCode>
+      <processField>cidadeCOM</processField>
+      <subProcessField>cidadeCOM</subProcessField>
+      <mapFlow>2</mapFlow>
+    </SubProcessFieldRelationship>
+    <SubProcessFieldRelationship>
+      <formMapId>1162</formMapId>
+      <tenantId>1</tenantId>
+      <processCode>REGISTRO CARTORIO</processCode>
+      <stateSequence>5</stateSequence>
+      <version>4</version>
+      <subProcessCode>TRATATIVAS CONTRATOS REGISTRADOS</subProcessCode>
+      <processField>CEP</processField>
+      <subProcessField>CEP</subProcessField>
+      <mapFlow>2</mapFlow>
+    </SubProcessFieldRelationship>
+    <SubProcessFieldRelationship>
+      <formMapId>1163</formMapId>
+      <tenantId>1</tenantId>
+      <processCode>REGISTRO CARTORIO</processCode>
+      <stateSequence>5</stateSequence>
+      <version>4</version>
+      <subProcessCode>TRATATIVAS CONTRATOS REGISTRADOS</subProcessCode>
+      <processField>Cel</processField>
+      <subProcessField>Cel</subProcessField>
+      <mapFlow>2</mapFlow>
+    </SubProcessFieldRelationship>
+    <SubProcessFieldRelationship>
+      <formMapId>1164</formMapId>
+      <tenantId>1</tenantId>
+      <processCode>REGISTRO CARTORIO</processCode>
+      <stateSequence>5</stateSequence>
+      <version>4</version>
+      <subProcessCode>TRATATIVAS CONTRATOS REGISTRADOS</subProcessCode>
+      <processField>razaoSocial</processField>
+      <subProcessField>razaoSocial</subProcessField>
+      <mapFlow>2</mapFlow>
+    </SubProcessFieldRelationship>
+    <SubProcessFieldRelationship>
+      <formMapId>1165</formMapId>
+      <tenantId>1</tenantId>
+      <processCode>REGISTRO CARTORIO</processCode>
+      <stateSequence>5</stateSequence>
+      <version>4</version>
+      <subProcessCode>TRATATIVAS CONTRATOS REGISTRADOS</subProcessCode>
+      <processField>oeRG</processField>
+      <subProcessField>oeRG</subProcessField>
+      <mapFlow>2</mapFlow>
+    </SubProcessFieldRelationship>
+    <SubProcessFieldRelationship>
+      <formMapId>1166</formMapId>
+      <tenantId>1</tenantId>
+      <processCode>REGISTRO CARTORIO</processCode>
+      <stateSequence>5</stateSequence>
+      <version>4</version>
+      <subProcessCode>TRATATIVAS CONTRATOS REGISTRADOS</subProcessCode>
+      <processField>profissaoCliente</processField>
+      <subProcessField>profissaoCliente</subProcessField>
+      <mapFlow>2</mapFlow>
+    </SubProcessFieldRelationship>
+  </list>
+  <list/>
+  <list/>
+  <list/>
+</list>
